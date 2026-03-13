@@ -103,8 +103,8 @@ export default function App() {
             animate={{ opacity: 0.65, scale: 1 }} 
             transition={{ duration: 2.5 }}
             src="/luxo.png" 
-            alt="Josuel Julião" 
-            className="absolute inset-0 w-full h-full object-cover object-[center_20%] brightness-110"
+            alt="luxo" 
+            className="absolute inset-0 w-full h-full object-cover object-[center_20%] brightness-50"
             style={{ maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)' }}
           />
           
@@ -124,7 +124,7 @@ export default function App() {
             
             <h1 className="text-4xl md:text-7xl lg:text-8xl font-light tracking-tighter text-white mb-12 leading-[1.1] md:leading-[1] uppercase">
               Onde a beleza <br /> 
-              <span className="italic font-extralight text-stone-500">Ganha Vida</span>
+              <span className="italic font-extralight text-stone-400">Ganha Vida</span>
             </h1>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
@@ -140,7 +140,7 @@ export default function App() {
       </section>
       
       <section>
-        <h5 className="text-[15px] text-center uppercase tracking-[0.4em] text-amber-200/70 font-bold">Nossos Serviços</h5>
+        <h5 className="text-[15px] text-center uppercase tracking-[0.4em] text-amber-200/70 font-bold mt-20">Nossos Serviços</h5>
       </section>
 
       {/* Services Section */}
@@ -157,10 +157,6 @@ export default function App() {
         
 
         <div className="max-w-screen-xl mx-auto relative z-10">
-          <div className="flex flex-col items-center text-center mb-24 md:mb-32">
-            <div className="w-12 h-[1px] bg-amber-200/30 mb-10" />
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <ServiceCard index={1} icon={Scissors} title="Corte Visagista" price="R$ 250" desc="Um estudo profundo das suas linhas faciais para revelar sua melhor versão." />
             <ServiceCard index={2} icon={Sparkles} title="Cor & Identidade" price="Consultar" desc="Técnicas de iluminação que respeitam a saúde capilar e o seu contraste natural." />
